@@ -1,0 +1,83 @@
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1c2733;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f9;
+}
+
+.checkout {
+  max-width: 720px;
+  margin: 32px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+}
+
+.selection-controls,
+.fare-summary {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.control-row:last-child {
+  border-bottom: none;
+}
+
+.stepper button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.stepper span {
+  display: inline-block;
+  min-width: 28px;
+  text-align: center;
+}
+
+.fare-total {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.line-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+.fare-summary-state {
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.fare-summary-error {
+  margin: 12px 0 0;
+  color: #b42318;
+  background: #fff1f0;
+  border: 1px solid #ffdad6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
